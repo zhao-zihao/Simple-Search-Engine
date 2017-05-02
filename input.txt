@@ -1,0 +1,8 @@
+https://www.quora.com/How-do-I-install-urllib-and-urllib2-for-Python-3-3-2
+https://www.crummy.com/software/BeautifulSoup/
+https://docs.python.org/3/howto/urllib2.html
+http://docs.python-requests.org/en/master/
+http://stackoverflow.com/questions/2600191/how-can-i-count-the-occurrences-of-a-list-item-in-python
+https://en.wikipedia.org/wiki/Trie
+http://stackoverflow.com/questions/522563/accessing-the-index-in-python-for-loops
+
