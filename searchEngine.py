@@ -1,15 +1,13 @@
 import string
 import re  # get rid of the punctuations
-import requests
+import requests  # request to get the html page
 import os
-from urllib.request import urlopen  # request to get the html page
 from bs4 import BeautifulSoup as bs  # parse html page into plain text
 
 import hashlib  # hash url of website
 from stop_words import get_stop_words
 from collections import defaultdict
-import shutil
-import operator
+import shutil  # to clear the the directory and sub files
 
 # TrieNode class:
 # next dictionary store the character for next node
