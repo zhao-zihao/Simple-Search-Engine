@@ -9,6 +9,8 @@ import hashlib  # hash url of website
 from stop_words import get_stop_words
 from collections import defaultdict
 import shutil
+import operator
+
 # TrieNode class:
 # next dictionary store the character for next node
 # ref array stores the occurrence lists outside the trie
@@ -41,7 +43,7 @@ class Trie(object):
         for line in iter(lines):
             line = line.split()
             # line[0] hash, line[1] url, line[2] frequency
-            mapHashToWebsiteAndFrequency[line[0]] = (line[1], line[2])
+            mapHashToWebsiteAndFrequency[line[0]] = [line[1], int(float(line[2]))]
         return mapHashToWebsiteAndFrequency
 
     def insert(self, word, website):
@@ -105,12 +107,16 @@ class Trie(object):
                 if occurenceList.get(k) is None:  # O(1)
                     firtWordOccurenceList[k] = None
 
-        res = {}
+        mapHashToUrlAndFrequenceyTuple = {}
         for hashValue, websiteAndFrequencyTuple in firtWordOccurenceList.items():
             if websiteAndFrequencyTuple is not None:
-                res[hashValue] = websiteAndFrequencyTuple
+                mapHashToUrlAndFrequenceyTuple[hashValue] = websiteAndFrequencyTuple
 
-        return res
+        # sort result by frequency
+        resultList = [v for k, v in mapHashToUrlAndFrequenceyTuple.items()]
+        resultList = sorted(resultList, key = lambda urlFreqList: urlFreqList[1], reverse=True)
+
+        return resultList
 
 def getHash(url):
     '''return a unique and stable hash value from hashing the website url'''
@@ -205,19 +211,20 @@ if __name__ == '__main__':
         f.write('Query: time\n')
         resultList = trie.searchManyOrOne("time")
         if resultList != None:
-            resultString = '\n'.join([v[0]+" "+v[1] for k, v in resultList.items()])
+            resultString = '\n'.join([list[0] + " " + str(list[1]) for list in resultList])
             f.write("Result: \n" + resultString + "\n")
 
         f.write('Query: python\n')
         resultList = trie.searchManyOrOne("python")
+        sortedResultList = sorted(resultList, key=lambda urlFreqList: urlFreqList[1], reverse=True)
         if resultList != None:
-            resultString = '\n'.join([v[0] + " " + v[1] for k, v in resultList.items()])
+            resultString = '\n'.join([list[0] + " " + str(list[1]) for list in resultList])
             f.write("Result: \n" + resultString + "\n")
 
         f.write('Query: python string\n')
         resultList = trie.searchManyOrOne("python string")
         if resultList != None:
-            resultString = '\n'.join([v[0] + " " + v[1] for k, v in resultList.items()])
+            resultString = '\n'.join([list[0] + " " + str(list[1]) for list in resultList])
             f.write("Result: \n" + resultString + "\n")
 
         f.close()
