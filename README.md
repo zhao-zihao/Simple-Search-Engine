@@ -43,6 +43,12 @@ take an url and convert it into hash value, preparing for making a dictionary fo
 ### other directory and files
 #### 1. occurenceList
 This is a folder where I store occurence list for each word as required.
+the occurenceList folder storing the occurrence list for each word.
+![alt text]("original picture")
+for example,
+the ‘python.txt’ file as below, there are 6 websites contain the python word.
+The first line: the 1th string value is hash value calculated from the url; the 2th string is the website url; the 3th is the frequency of ‘python’ word in the website.
+![alt text]( "original picture")
 
 #### 2. requirements.txt
 This file specify all the python3 libraries needed for this search engine project.
