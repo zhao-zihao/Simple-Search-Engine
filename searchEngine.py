@@ -13,6 +13,7 @@ import shutil  # to clear the the directory and sub files
 # next dictionary store the character for next node
 # ref array stores the occurrence lists outside the trie
 class TrieNode(object):
+
     def __init__(self):
         self.next = {}
         self.ref = None
@@ -49,7 +50,7 @@ class Trie(object):
         # create a iterator
         index = self.root
         # for every single character in the word
-        for c in word:
+        for i, c in enumerate(word):
             # if can't find the a character entry for the next node
             if c not in index.next:
                 # create the entry
