@@ -9,6 +9,7 @@ pip3 install -r requirements.txt
 
 python3 searchEngine.py
 ```
+
 #### Files
 
 #### 1. input.txt:
@@ -17,6 +18,7 @@ The input.txt contains 7 website links which I used as the input source. If you 
 #### 2. output.txt:
 The output file contains the result of sample queries, which is already created by running searchEngine.py file. Feel free to run the searchEngine.py file again to recreate it.
 This file contains urls returned by query result and ranking them by frequency of each words. It means that the website contains more words would rank higher.
+![alt text](https://github.com/HoweZZH/Simple-Search-Engine/blob/master/pictures/output.png? "original picture")
 
 #### 3. searchEngine.py:
 This is the main program in my project.
