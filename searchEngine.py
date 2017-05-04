@@ -132,7 +132,9 @@ def readURLsFromFile(inputURL):
         return
 
     #get stop words with python stop_words library
-    stop_words = set(get_stop_words('english'))
+    stop_words = get_stop_words('english')
+    stop_words.extend(["between", "among", "under","during","except", "through"])
+    stop_words = set(stop_words)
 
     # make dir to store occurence list to disk
     directory = os.getcwd() + "/occurenceList/"

@@ -1,6 +1,12 @@
 # Simple-Search-Engine
+### Approach
+1. Read websites urls from `input.txt` file.
+2. Crawling website contents and store the occurence list of each word in `occurrenceList` folder where the `file name` is reference for index terms and file content is the occurence list for word. The occurrence list store website url hash value, website url, word count.
+3. Build compressed trie from website contents and get rid of stop words and store `file name` as reference for index terms in the external node of the trie.
+4. The query for a single word takes O(n) time, where n is the length of the word. And the query from trie for sentence takes O(n) time, where n is the length of sentence. And get the intersection of all query urls takes O(nm) time, where n is the size of urls query from the first word, m is the number of words in the sentence.
+5. For ranking algorithm, first we have a list of urls. For each urls we have word frequency and then sort them according the frequency in descending order. Return the sorted urls.
+##### for more detailed implementation, please see python `searchEngine.py` file
 ### Install tools
-
 First, you need to make sure you have python3 environment (preferred using virtualenv)
 open the terminal in MAC OS, linux or the cmd in windows system.
 Then cd to working directory, then run following commands as below:
