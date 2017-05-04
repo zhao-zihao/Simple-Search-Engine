@@ -16,6 +16,7 @@ The input.txt contains 7 website links which I used as the input source. If you 
 
 #### 2. output.txt:
 The output file contains the result of sample queries, which is already created by running searchEngine.py file. Feel free to run the searchEngine.py file again to recreate it.
+This file contains urls returned by query result and ranking them by frequency of each words. It means that the website contains more words would rank higher.
 
 #### 3. searchEngine.py:
 This is the main program in my project.
@@ -33,6 +34,8 @@ Search the given word in the URLs content which has already been filtered.
 insert(): insert key word and website url to Trie
 searchOne(): search a single key word
 searchManyOrOne(): search a sentences Or a single word
+
+The search method would return urls that contains all the input words and ranking them by frequency.
 
 #### readURLsFromFile (inputURL)
 Get the website URLs then parse them to be plain text. Then do a series of data processing, like convert to lowercase, get rid of stop words, divide the plain text to multitude of single words. Then store these words and url into inverted file. After these preparation, the content is ready to be searched.
