@@ -2,21 +2,24 @@ Query: time
 Result: 
 https://en.wikipedia.org/wiki/Trie 6
 http://stackoverflow.com/questions/522563/accessing-the-index-in-python-for-loops 3
-https://www.crummy.com/software/BeautifulSoup/ 3
 http://stackoverflow.com/questions/2600191/how-can-i-count-the-occurrences-of-a-list-item-in-python 3
-http://docs.python-requests.org/en/master/ 1
+https://www.crummy.com/software/BeautifulSoup/ 3
 https://docs.python.org/3/howto/urllib2.html 1
+http://docs.python-requests.org/en/master/ 1
+
 Query: python
 Result: 
 http://stackoverflow.com/questions/522563/accessing-the-index-in-python-for-loops 31
 https://docs.python.org/3/howto/urllib2.html 24
-http://stackoverflow.com/questions/2600191/how-can-i-count-the-occurrences-of-a-list-item-in-python 24
-https://www.crummy.com/software/BeautifulSoup/ 18
+http://stackoverflow.com/questions/2600191/how-can-i-count-the-occurrences-of-a-list-item-in-python 23
+https://www.crummy.com/software/BeautifulSoup/ 16
 http://docs.python-requests.org/en/master/ 9
 https://en.wikipedia.org/wiki/Trie 2
+
 Query: python string
 Result: 
 http://stackoverflow.com/questions/522563/accessing-the-index-in-python-for-loops 31
 https://docs.python.org/3/howto/urllib2.html 24
-http://stackoverflow.com/questions/2600191/how-can-i-count-the-occurrences-of-a-list-item-in-python 24
+http://stackoverflow.com/questions/2600191/how-can-i-count-the-occurrences-of-a-list-item-in-python 23
 https://en.wikipedia.org/wiki/Trie 2
+

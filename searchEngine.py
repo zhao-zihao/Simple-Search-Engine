@@ -174,7 +174,7 @@ def readURLsFromFile(inputURL):
         content = re.sub(r'[0-9]+[a-zA-Z]*', ' ', content)
         content = re.sub(r'[^A-Za-z0-9]+', ' ', content).split()  # content is list type
 
-
+        # initialize a dict with integer key = 0
         mapWordToFrequency = defaultdict(int)
 
         for word in content:
@@ -213,20 +213,20 @@ if __name__ == '__main__':
         resultList = trie.searchManyOrOne("time")
         if resultList != None:
             resultString = '\n'.join([list[0] + " " + str(list[1]) for list in resultList])
-            f.write("Result: \n" + resultString + "\n")
+            f.write("Result: \n" + resultString + "\n\n")
 
         f.write('Query: python\n')
         resultList = trie.searchManyOrOne("python")
         sortedResultList = sorted(resultList, key=lambda urlFreqList: urlFreqList[1], reverse=True)
         if resultList != None:
             resultString = '\n'.join([list[0] + " " + str(list[1]) for list in resultList])
-            f.write("Result: \n" + resultString + "\n")
+            f.write("Result: \n" + resultString + "\n\n")
 
         f.write('Query: python string\n')
         resultList = trie.searchManyOrOne("python string")
         if resultList != None:
             resultString = '\n'.join([list[0] + " " + str(list[1]) for list in resultList])
-            f.write("Result: \n" + resultString + "\n")
+            f.write("Result: \n" + resultString + "\n\n")
 
         f.close()
 
