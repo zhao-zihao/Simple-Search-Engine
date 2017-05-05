@@ -64,4 +64,4 @@ The first line: the 1st string value is hash value calculated from the url; the 
 ![alt text](https://github.com/HoweZZH/Simple-Search-Engine/blob/master/pictures/Picture2.png? "original picture")
 
 #### 2. requirements.txt
-This file specify all the python3 libraries needed for this search engine project.
+This file specify all the python3 libraries needed for this search engine project. Install these requirements libries with `pip3 install -r requirements.txt`
