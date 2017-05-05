@@ -18,9 +18,6 @@ class TrieNode(object):
         self.next = {}
         self.ref = None
 
-        # Trie class:
-
-
 class Trie(object):
     def __init__(self):
         # root object store the root entry for trie tree
@@ -50,6 +47,7 @@ class Trie(object):
         # create a iterator
         index = self.root
         # for every single character in the word
+
         for i, c in enumerate(word):
             # if can't find the a character entry for the next node
             if c not in index.next:
