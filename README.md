@@ -55,7 +55,7 @@ take an url and convert it into hash value, preparing for making a dictionary fo
 #### 1. occurenceList
 This is a folder where I store occurence list for each word as required.
 the occurenceList folder storing the occurrence list for each word.
-<img src="https://github.com/HoweZZH/Simple-Search-Engine/blob/master/pictures/Picture1.png" alt="Drawing" width="200" height="200"/>
+<img src="https://github.com/HoweZZH/Simple-Search-Engine/blob/master/pictures/Picture1.png" alt="Drawing" width="400" height="400"/>
 for example,
 the ‘python.txt’ file as below, there are 6 websites contain the python word.
 The first line: the 1st string value is hash value calculated from the url; the 2nd string is the website url; the 3rd is the frequency of ‘python’ word in the website.
