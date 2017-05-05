@@ -58,7 +58,7 @@ the occurenceList folder storing the occurrence list for each word.
 ![alt text](https://github.com/HoweZZH/Simple-Search-Engine/blob/master/pictures/Picture1.png? "original picture")
 for example,
 the ‘python.txt’ file as below, there are 6 websites contain the python word.
-The first line: the 1th string value is hash value calculated from the url; the 2th string is the website url; the 3th is the frequency of ‘python’ word in the website.
+The first line: the 1st string value is hash value calculated from the url; the 2nd string is the website url; the 3rd is the frequency of ‘python’ word in the website.
 ![alt text](https://github.com/HoweZZH/Simple-Search-Engine/blob/master/pictures/Picture2.png? "original picture")
 
 #### 2. requirements.txt
